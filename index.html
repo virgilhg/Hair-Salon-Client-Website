@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade 21 Barbershop - Premium Haircuts & Grooming in Dallas</title>
+    <meta name="description" content="Experience Dallas's premier barbershop. Expert cuts, beard grooming, and personalized styling. Book your appointment today!">
+    
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">BLADE 21</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Book Now</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Unleash Your Ultimate Persona</h1>
+            <p>Experience Dallas's Premier Barbershop</p>
+            <a href="#contact" class="cta-button">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Blade 21 Kids</h3>
+                    <p>Advanced Haircut + Razor Lineup for our young champions (12 & under)</p>
+                    <div class="price">$25</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💈</div>
+                    <h3>Blade 21 Ultra</h3>
+                    <p>Men's Advanced Haircut + Razor Beard Shave/Lineup</p>
+                    <div class="price">$35</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👑</div>
+                    <h3>Blade 21 Premium</h3>
+                    <p>Advanced Haircut + Straight Razor Shave + Hot Steam Towel & Lather</p>
+                    <div class="price">$50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Master Craftsmanship in Every Cut</h2>
+            <p>At Blade 21 Barbershop, we're not just cutting hair – we're crafting confidence. Our skilled barbers combine traditional techniques with modern style to deliver the perfect look for every client.</p>
+            <p>Located in the heart of Dallas, we pride ourselves on creating an atmosphere where expertise meets comfort. Whether you need a classic cut or the latest trend, our team is dedicated to exceeding your expectations.</p>
+            <p>Join the hundreds of satisfied clients who've discovered why Blade 21 is Dallas's go-to destination for premium grooming.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800" alt="Professional barber at work">
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400" alt="Haircut style 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400" alt="Haircut style 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=400" alt="Haircut style 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400" alt="Haircut style 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best barbershop I've been to! The attention to detail and professionalism is unmatched. Highly recommend!"</p>
+                    <p class="testimonial-author">- Daniel Morris</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-item">
+                <i>📍</i>
+                <p>123 Main Street, Dallas, TX 75201</p>
+            </div>
+            <div class="contact-item">
+                <i>📞</i>
+                <p>(214) 555-0123</p>
+            </div>
+            <div class="contact-item">
+                <i>📧</i>
+                <p>info@blade21barbershop.com</p>
+            </div>
+            <div class="contact-item">
+                <i>🕐</i>
+                <p>Mon-Fri: 9AM-7PM<br>Sat: 9AM-6PM<br>Sun: 10AM-5PM</p>
+            </div>
+        </div>
+        <div class="booking-form">
+            <h3>Book Your Appointment</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option value="kids">Blade 21 Kids - $25</option>
+                        <option value="ultra">Blade 21 Ultra - $35</option>
+                        <option value="premium">Blade 21 Premium - $50</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+        </div>
+        <p>&copy; 2025 Blade 21 Barbershop. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
